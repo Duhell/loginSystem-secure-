@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid black;
+    padding: 1em 1.3em;
+    width: 400px;
+    background: rgba(255, 251, 251, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(255, 251, 251, 0.06);
+}
+form #regTitle{
+    text-align:center;
+    font-size:1.3rem;
+    padding-bottom: .9em;
+    margin-bottom: 10px;
+}
+form > div{
+    display: flex;
+    flex-direction: column;
+    margin-block: .3em;
+}
+
+form > div > input{
+    outline: none;
+    padding: .4em 1em;
+    background-color:transparent;
+    border:none;
+    color: rgba(255,255,255,0.8);
+    border-bottom: 1px solid rgba(0,0,0,.7);
+}
+
+form > div > input::placeholder{
+    color:rgba(255,255,255,0.5);
+}
+
+form button{
+    margin-top: 10px;
+    padding-block: .6em;
+    cursor: pointer;
+    background-color: #c88374;
+    border:none;
+    transition: .2s ease-in;
+}
+
+form button:hover{
+    background-color: rgba(255,255,255,0.7);
+
+}
+
+#A_login{
+    font-size: .8rem;
+    margin-top: 10px;
+}
+#forgot_password{
+    font-size: .7rem;
+    margin-top: 10px;
+}
+
+#error,
+#success{
+    margin-top: 10px;
+}
+#error{
+    color: red;
+    font-size: .9rem;
+}
+#success{
+    font-size: 0.9rem;
+    color: #fff;
+}
